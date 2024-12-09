@@ -180,3 +180,42 @@ display: block;
 margin-bottom: 10px;
 text-decoration: none;
 }
+/* boton flotante */
+
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6347; /* Un rojo tomate más suave */
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar el botón */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-flotante:hover {
+    background-color: #FF4500; /* Un rojo más fuerte al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento en el botón */
+}
+
+.boton-flotante img {
+    width: 40px;
+    height: 40px;
+}
+
+#contador-carrito {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #000; /* Fondo negro para el contador */
+    color: #fff; /* Texto blanco */
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 14px;
+}
